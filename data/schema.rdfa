@@ -46,6 +46,8 @@
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/Thing">Thing</a></span>
        <span>Source:  <a property="dc:source" href="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews">rNews</a></span>
     </div>
+	
+
 
     <div typeof="rdfs:Class" resource="http://schema.org/WebPage">
       <span class="h" property="rdfs:label">WebPage</span>
@@ -6406,6 +6408,41 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/TechArticle">TechArticle</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>
+	<div typeof="rdf:Property" resource="http://schema.org/Instruction">
+      <span class="h" property="rdfs:label">Instruction</span>
+      <span property="rdfs:comment">an instruction for the user described in the handbook</span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/TechArticle">TechArticle</a></span>
+	  <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Action">Action</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
+    </div>
+	<div typeof="rdf:Property" resource="http://schema.org/InstructionStep">
+      <span class="h" property="rdfs:label">InstructionStep</span>
+      <span property="rdfs:comment">an instructionstep for the user described in the handbook</span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/TechArticle">TechArticle</a></span>
+	  <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Instruction">Instruction</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
+    </div>
+	<div typeof="rdf:Property" resource="http://schema.org/Warning">
+      <span class="h" property="rdfs:label">Warning</span>
+      <span property="rdfs:comment">a warning for the user described in the handbook</span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/TechArticle">TechArticle</a></span>
+	  <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Instruction">TechArticle</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
+    </div>
+	<div typeof="rdf:Property" resource="http://schema.org/ProblemSituation">
+      <span class="h" property="rdfs:label">ProblemSituation</span>
+      <span property="rdfs:comment">A troubleshooting guide for the user if something is wrong with the product</span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/TechArticle">TechArticle</a></span>
+	  <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Instruction">Instruction</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
+    </div>
+	<div typeof="rdf:Property" resource="http://schema.org/maintainAction">
+      <span class="h" property="rdfs:label">MaintainAction</span>
+      <span property="rdfs:comment">A described action to maintain the product like cleaning the filter of a vaccuum cleaner</span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Action">Action</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
+    </div>
+
     <div typeof="rdf:Property" resource="http://schema.org/programmingLanguage">
       <span class="h" property="rdfs:label">programmingLanguage</span>
       <span property="rdfs:comment">The computer programming language.</span>
